@@ -1,0 +1,6 @@
+2025/07/13 14:53:30 port number:  50051
+2025/07/13 14:53:30 65536 42
+2025/07/13 14:53:30 DB N: 65536, Entry Size 8 Bytes, DB Size 0 MB
+2025/07/13 14:53:30 Chunk Size: 512 Set Size: 128
+2025/07/13 14:53:30 DB Real N: 65536
+2025/07/13 14:53:30 server listening at [::]:50051

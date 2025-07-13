@@ -1,0 +1,34 @@
+2025/07/13 14:53:31 Server address localhost:50051, thread number 1 ignoreOffline false
+2025/07/13 14:53:31 65536 42
+2025/07/13 14:53:31 DBSize 65536, DBSeed 42, ChunkSize 512, SetSize 128
+2025/07/13 14:53:31 totalQueryNum 2839
+2025/07/13 14:53:31 k = 37
+2025/07/13 14:53:31 Start fetching the whole DB
+2025/07/13 14:53:31 Every Local Set Size 32 bytes
+2025/07/13 14:53:31 Every Local Backup Set Size 16 bytes
+2025/07/13 14:53:31 Local Set Num 18944, Local Backup Set Num 8448
+2025/07/13 14:53:31 Local Set Size 32 bytes -----------------------
+2025/07/13 14:53:31 Local Storage Size 0.8359375 MB
+2025/07/13 14:53:31 Per query communication cost 1.0078125 kb
+2025/07/13 14:53:31 received chunk 0
+2025/07/13 14:53:32 Finish Setup Phase, store 18944 local sets, 8448 backup sets/replacement pairs
+2025/07/13 14:53:32 Local Storage Size 0.8359375 MB
+2025/07/13 14:53:32 Setup Phase took 174 ms, amortized time 0.06128918633321592 ms per query
+2025/07/13 14:53:32 Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per query
+2025/07/13 14:53:32 Num of local miss elements 0
+2025/07/13 14:53:32 Making 0-th query
+2025/07/13 14:53:32 Correct value [4167112739484722821] at index 44046
+2025/07/13 14:53:32 Finish Online Phase with 1000 queries
+2025/07/13 14:53:32 Online Phase took 133 ms, amortized time 0.133 ms
+2025/07/13 14:53:32 Per query upload cost 1 kb
+2025/07/13 14:53:32 Per query download cost 0.0078125 kb
+2025/07/13 14:53:32 End to end amortized time 0.19428918633321593 ms
+2025/07/13 14:53:32 End to end amortized comm cost 1.1881576919690031 kb
+2025/07/13 14:53:32 ---------------breakdown-------------------------
+2025/07/13 14:53:32 End to end amortized time 0.19428918633321593 ms
+2025/07/13 14:53:32 Average Online Time 0.13387691699999998 ms
+2025/07/13 14:53:32 Average Network Latency 0.098941832 ms
+2025/07/13 14:53:32 Average Server Time 0.0010570039999999998 ms
+2025/07/13 14:53:32 Average Client Time 0.03387808099999999 ms
+2025/07/13 14:53:32 Average Find Hint Time 0.026584989 ms
+2025/07/13 14:53:32 -------------------------------------------------

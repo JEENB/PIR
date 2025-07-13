@@ -76,4 +76,82 @@ Finish Online Phase with 1000 queries
 Online Phase took 86 ms, amortized time 0.086 ms
 Per query upload cost 1 kb
 Per query download cost 0.0078125 kb
-End to end amortized time 0.12439380063402605 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.12439380063402605 msAverage Online Time 0.086651667 msAverage Network Latency 0.065331612 msAverage Server Time 0.000895795 msAverage Client Time 0.020424260000000003 msAverage Find Hint Time 0.016014692 ms-------------------------------------------------
+End to end amortized time 0.12439380063402605 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.12439380063402605 msAverage Online Time 0.086651667 msAverage Network Latency 0.065331612 msAverage Server Time 0.000895795 msAverage Client Time 0.020424260000000003 msAverage Find Hint Time 0.016014692 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 176 ms, amortized time 0.176 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 126 ms, amortized time 0.126 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.18799365973934484 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.18799365973934484 msAverage Online Time 0.126734541 msAverage Network Latency 0.091752504 msAverage Server Time 0.001437085 msAverage Client Time 0.033544951999999996 msAverage Find Hint Time 0.027071769 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 171 ms, amortized time 0.171 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 125 ms, amortized time 0.125 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.18523247622402256 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.18523247622402256 msAverage Online Time 0.125329625 msAverage Network Latency 0.093000812 msAverage Server Time 0.00100813 msAverage Client Time 0.031320682999999995 msAverage Find Hint Time 0.0245107 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 167 ms, amortized time 0.167 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 125 ms, amortized time 0.125 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.18382352941176472 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.18382352941176472 msAverage Online Time 0.125375875 msAverage Network Latency 0.092391879 msAverage Server Time 0.0011961559999999999 msAverage Client Time 0.03178784 msAverage Find Hint Time 0.025275735 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 175 ms, amortized time 0.175 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 142 ms, amortized time 0.142 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.20364142303628036 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.20364142303628036 msAverage Online Time 0.14287933300000003 msAverage Network Latency 0.105540331 msAverage Server Time 0.001183491 msAverage Client Time 0.03615551100000001 msAverage Find Hint Time 0.028756131 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 179 ms, amortized time 0.179 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 132 ms, amortized time 0.132 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.19505036984853824 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.19505036984853824 msAverage Online Time 0.132750125 msAverage Network Latency 0.09764210899999999 msAverage Server Time 0.001165097 msAverage Client Time 0.033942919 msAverage Find Hint Time 0.02646014 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 174 ms, amortized time 0.174 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 133 ms, amortized time 0.133 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.19428918633321593 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.19428918633321593 msAverage Online Time 0.13387691699999998 msAverage Network Latency 0.098941832 msAverage Server Time 0.0010570039999999998 msAverage Client Time 0.03387808099999999 msAverage Find Hint Time 0.026584989 ms-------------------------------------------------

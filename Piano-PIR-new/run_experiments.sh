@@ -6,51 +6,65 @@ CLIENT_GO="client_new/client_new.go"
 UTIL_GO="util/util.go"
 CONFIG_TXT="config.txt"
 
-# Edit these lists for your sweep
-LOGDBSIZE_LIST=(16 18 20 22 24)  # (2^16, 2^17, 2^18, 2^19)
-ENTRYSIZE_LIST=(2048 4096 8192)  #(2KB, 4KB, 8KB, 16KB)
+# Edit these lists for your sweep (add more as needed)
+LOGDBSIZE_LIST=(16 17 18)    # Try: 16, 17, 18
+ENTRYSIZE_LIST=(8 32 256)    # Try: 8, 32, 256 (must be multiple of 8!)
 
 echo "LogDBSize,EntrySize,AmortizedTime_ms" > $RESULTS_FILE
+
+# Backup util.go ONCE
+cp "$UTIL_GO" "$UTIL_GO.orig"
 
 for logdbsize in "${LOGDBSIZE_LIST[@]}"; do
   N=$((2 ** logdbsize))
   for entrysize in "${ENTRYSIZE_LIST[@]}"; do
-    # Write config.txt
-    echo "$N 42" > $CONFIG_TXT  # 42 as seed; change if needed
 
-    # Edit util.go for entry size (replace the constant line)
-    sed -i.bak "s/const DBEntrySize = .*/const DBEntrySize = $entrysize/" "$UTIL_GO"
+    echo "========== Running for LogDBSize=$logdbsize, EntrySize=$entrysize, N=$N =========="
+    echo "$N 42" > $CONFIG_TXT
+    cat $CONFIG_TXT
 
-    # Kill any previous server on port 50051
+    # Edit DBEntrySize in util.go (make sure to match your line exactly!)
+    sed -i.bak "s/DBEntrySize[[:space:]]*=[[:space:]]*[0-9]\+/DBEntrySize   = $entrysize/" "$UTIL_GO"
+
+    # Kill previous server(s) and wait for port to free up
     lsof -ti :50051 | xargs kill 2>/dev/null
-    sleep 2`1`1 
-    # Wait until port is free
+    sleep 2
     while lsof -i :50051 >/dev/null; do sleep 1; done
 
-    #Kill any previous server
-    pkill -f "go run $SERVER_GO"
+    # Logging files (unique per run)
+    RUN_ID="${logdbsize}_${entrysize}_$(date +%s)"
+    SERVER_LOG="server_log_$RUN_ID.txt"
+    CLIENT_LOG="client_log_$RUN_ID.txt"
+
+    # Start server in background, redirect output to log
+    nohup go run $SERVER_GO -port 50051 > "$SERVER_LOG" 2>&1 &
+    SERVER_PID=$!
     sleep 2
 
-    # Start server in background
-    go run $SERVER_GO -port 50051 &
-    SERVER_PID=$!
-    sleep 2  # Wait for server to start
+    # Run client and log output
+    go run $CLIENT_GO -ip localhost:50051 -thread 1 > "$CLIENT_LOG" 2>&1
+    OUTPUT=$(cat "$CLIENT_LOG")
 
-    # Run client and capture output
-    OUTPUT=$(go run $CLIENT_GO -ip localhost:50051 -thread 1 2>&1)
+    # Extract amortized time (online phase)
     AMORTIZED=$(echo "$OUTPUT" | grep 'Online Phase took' | awk -F'amortized time ' '{print $2}' | awk '{print $1}')
 
-    # Save result
     if [ -n "$AMORTIZED" ]; then
       echo "$logdbsize,$entrysize,$AMORTIZED" >> $RESULTS_FILE
+      echo "Result: LogDBSize=$logdbsize, EntrySize=$entrysize, AmortizedTime_ms=$AMORTIZED"
     else
       echo "Run failed for LogDBSize=$logdbsize EntrySize=$entrysize"
     fi
 
-    # 7. Kill server after each run
     kill $SERVER_PID
     sleep 2
+    while lsof -i :50051 >/dev/null; do sleep 1; done
+
+    # (Optional) Clean up .bak files after each run
+    rm -f "$UTIL_GO.bak"
   done
 done
+
+# Restore original util.go at the end
+mv "$UTIL_GO.orig" "$UTIL_GO"
 
 echo "All experiments completed. Results in $RESULTS_FILE"
