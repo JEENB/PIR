@@ -1,0 +1,79 @@
+Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 135 ms, amortized time 0.135 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 95 ms, amortized time 0.095 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.142551954913702 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.142551954913702 msAverage Online Time 0.095830958 msAverage Network Latency 0.071607845 msAverage Server Time 0.00113218 msAverage Client Time 0.023090932999999998 msAverage Find Hint Time 0.018429026 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 133 ms, amortized time 0.133 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 88 ms, amortized time 0.088 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.13484748150757309 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.13484748150757309 msAverage Online Time 0.088052458 msAverage Network Latency 0.064058185 msAverage Server Time 0.0009751019999999999 msAverage Client Time 0.023019171 msAverage Find Hint Time 0.018386289 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 111 ms, amortized time 0.111 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 89 ms, amortized time 0.089 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.12809827404015497 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.12809827404015497 msAverage Online Time 0.089056041 msAverage Network Latency 0.066201229 msAverage Server Time 0.000832811 msAverage Client Time 0.02202200099999999 msAverage Find Hint Time 0.017524961999999998 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 111 ms, amortized time 0.111 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 85 ms, amortized time 0.085 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.124098274040155 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.124098274040155 msAverage Online Time 0.085423125 msAverage Network Latency 0.063592848 msAverage Server Time 0.000801966 msAverage Client Time 0.021028311 msAverage Find Hint Time 0.016715898 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 110 ms, amortized time 0.11 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 89 ms, amortized time 0.089 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.12774603733709053 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.12774603733709053 msAverage Online Time 0.089667042 msAverage Network Latency 0.066529527 msAverage Server Time 0.000926294 msAverage Client Time 0.022211220999999996 msAverage Find Hint Time 0.017601016 ms-------------------------------------------------Every Local Set Size 32 bytes
+Every Local Backup Set Size 16 bytes
+Local Set Num 18944, Local Backup Set Num 8448
+Local Storage Size 0.8359375 MB
+Per query communication cost 1.0078125 kb
+Finish Setup Phase, store 18944 local sets, 8448 backup sets
+Local Storage Size 0.8359375 MB
+Setup Phase took 109 ms, amortized time 0.109 ms per query
+Setup Phase Comm Cost 0.5 MB, amortized cost 0.18034519196900317 KB per queryNum of local miss elements 0
+Finish Online Phase with 1000 queries
+Online Phase took 86 ms, amortized time 0.086 ms
+Per query upload cost 1 kb
+Per query download cost 0.0078125 kb
+End to end amortized time 0.12439380063402605 msEnd to end amortized comm cost 1.1881576919690031 kb---------------breakdown-------------------------End to end amortized time 0.12439380063402605 msAverage Online Time 0.086651667 msAverage Network Latency 0.065331612 msAverage Server Time 0.000895795 msAverage Client Time 0.020424260000000003 msAverage Find Hint Time 0.016014692 ms-------------------------------------------------
