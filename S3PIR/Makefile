@@ -6,10 +6,19 @@ INCLUDE := src/include
 SRC := src/client.cpp src/server.cpp src/main.cpp src/utils.cpp
 DEPS := src/include/client.h src/include/server.h src/include/utils.h 
 
-BREW_PREFIX := $(shell brew --prefix)
-INCLUDES := -I $(INCLUDE) -I $(BREW_PREFIX)/include -I $(BREW_PREFIX)/include/cryptopp
-LDFLAGS := -L $(BREW_PREFIX)/lib
+UNAME_S := $(shell uname -s)
+
+ifeq ($(UNAME_S),Darwin) # Mac OS X
+    BREW_PREFIX := $(shell brew --prefix)
+    INCLUDES := -I$(BREW_PREFIX)/include -I$(BREW_PREFIX)/include/cryptopp
+    LDFLAGS := -L$(BREW_PREFIX)/lib
+else # Linux
+    INCLUDES := -I/usr/include -I/usr/include/cryptopp -I/usr/local/include -I/usr/local/include/cryptopp
+    LDFLAGS := -L/usr/lib -L/usr/local/lib
+endif
+
 LDLIBS := -lcryptopp
+
 
 all: $(TARGET) $(TARGET)_simlargeserver 
 
